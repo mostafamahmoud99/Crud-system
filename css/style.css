@@ -1,0 +1,89 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.textHead {
+  text-align: center;
+  margin: 4rem 0;
+}
+.textHead h1 {
+  position: relative;
+}
+.textHead h1::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #09c;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.textHead h1::before {
+  content: "";
+  width: 80px;
+  height: 3px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #09c;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.btn-delete {
+  color: #f00;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-delete:hover {
+  color: #f00;
+  transform: rotate(-110deg);
+  -webkit-transform: rotate(-110deg);
+  -moz-transform: rotate(-110deg);
+  -ms-transform: rotate(-110deg);
+  -o-transform: rotate(-110deg);
+}
+
+.btn-update {
+  color: #09c;
+}
+.btn-update:hover {
+  color: #09c;
+}
+.btn-add {
+  background-color: #09c;
+  color: #fff;
+}
+
+.alert {
+  display: none;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #09c;
+  color: #09c !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: none;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Crud Operation</title>
+  </head>
+  <body>
+    <!-- back to up -->
+    <button class="btn back-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="textHead">
+      <h1>Crud Operation</h1>
+    </div>
+    <div class="container">
+      <div class="groub-input my-2">
+        <label for="productName">Product Name :</label>
+        <input type="text" class="form-control" id="productName" />
+        <div id="alertName" class="alert alert-danger my-2">
+          Product Name Is Invalid
+        </div>
+      </div>
+
+      <div class="groub-input my-2">
+        <label for="productPrice">Product Price :</label>
+        <input type="number" class="form-control" id="productPrice" />
+        <div id="alertPrice" class="alert alert-danger my-2">
+          Product Price Is Invalid
+        </div>
+      </div>
+
+      <div class="groub-input my-2">
+        <label for="productCategory">Product Category :</label>
+        <input type="text" class="form-control" id="productCategory" />
+        <div id="alertCategory" class="alert alert-danger my-2">
+          Product Category Is Invalid
+        </div>
+      </div>
+
+      <div class="groub-input my-2">
+        <label for="productDescribtion">Product Describtion :</label>
+        <textarea
+          class="form-control"
+          id="productDescribtion"
+          cols="30"
+          rows="4"
+        ></textarea>
+        <div id="alertDesc" class="alert alert-danger my-2">
+          Product Describtion Is Invalid
+        </div>
+      </div>
+      <button class="btn btn-add" id="addBtn" disabled>Add Product</button>
+    </div>
+    <div class="container my-3">
+      <div class="search mb-3">
+        <input type="text" class="form-control" id="search" placeholder="Search Product">
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped text-center">
+          <thead>
+            <tr>
+              <td>Number</td>
+              <td>Product Name</td>
+              <td>Product Price</td>
+              <td>Product Category</td>
+              <td>Product Describtion</td>
+              <td>Delete</td>
+              <td>Update</td>
+            </tr>
+          </thead>
+          <tbody id="rowData">
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
