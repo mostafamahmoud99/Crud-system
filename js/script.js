@@ -205,7 +205,7 @@ productPriceInput.addEventListener("keyup", validationProductPrice);
 // validation product category
 
 function validationProductCategory() {
-  let regex = /^[a-z ]{3,}$/;
+  let regex = /^[a-zA-Z]{3,}$/;
   if (regex.test(productCategoryInput.value)) {
     alertCategory.style.display = "none";
     productCategoryInput.classList.add("is-valid");
